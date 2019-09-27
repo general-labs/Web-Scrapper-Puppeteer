@@ -1,0 +1,41 @@
+{
+  "name": "didarul-fetch-weather",
+  "version": "0.3.0",
+  "description": "Starter Kit ES6 Web Scrapper",
+  "main": "dist",
+  "scripts": {
+    "dev": "nodemon -w src --exec \"babel-node src --presets es2015\"",
+    "build": "babel src -s -D -d dist --presets es2015",
+    "start": "node dist"
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 7,
+      "sourceType": "module"
+    },
+    "env": {
+      "node": true
+    },
+    "rules": {
+      "no-console": 0,
+      "no-unused-vars": 1
+    }
+  },
+  "repository": "General Labs",
+  "author": "Didarul",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.3",
+    "puppeteer": "^1.15.0",
+    "resource-router-middleware": "^0.6.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-core": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "eslint": "^4.18.2",
+    "nodemon": "^1.9.2"
+  }
+}
